@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Smooch&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        font-family: "Poppins";
+        min-height: 100%;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .body {
+        width: 100%;
+        height: 100%;
+        background-image: url("https://c.wallhere.com/photos/4b/3d/PC_gaming_Cyberpunk_2077_Cyberpunk_2077_Phantom_Liberty_path_tracing-2279034.jpg!d");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        padding: 20px;
+        margin-bottom: 10px;
+        gap: 20px;
+        flex-wrap: wrap;
+        background-size: auto;
+        background-image: url("https://i.pinimg.com/736x/d7/a2/0c/d7a20c66023f6a814ea8658ec7d6ec5b.jpg");
+        border-radius: 200px;
+        margin-bottom: 8%;
+      }
+
+      .about p {
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 30px;
+        border-radius: 10px;
+        font-family: "Ephesis", cursive;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        padding-top: 40px;
+        padding-bottom: 20px;
+      }
+
+      .card-person {
+        background-color: white;
+        box-shadow: -1px 15px 30px -12px black;
+        width: 500px;
+        height: 310px;
+        position: relative;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      .card-person-image-Gamit {
+        height: 100px;
+        margin-bottom: 20px;
+        position: relative;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background: url("https://media.architecturaldigest.com/photos/5fd7a22e7782525c7261a661/master/pass/Cyberpunk2077_Crossroads_RGB.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card-person-image-Gamit .picture {
+        width: 110px;
+        top: -50px;
+        left: 200px;
+        position: absolute;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease;
+      }
+
+      .card-person-image-Tiamzon {
+        height: 100px;
+        margin-bottom: 20px;
+        position: relative;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background: url("https://cdn.selldone.com/app/shops/3356/products/colorfulcyberpunkmetaversecitybackgroundanimestyleconceptartdigitalpaintingfantasyillustrationjpg8aa27fea5e49835008ca224eb5ce4365.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card-person-image-Tiamzon .picture {
+        width: 110px;
+        top: -40px;
+        left: 195px;
+        position: absolute;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease;
+      }
+
+      .card-person-image-Magpayo {
+        height: 100px;
+        margin-bottom: 20px;
+        position: relative;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background: url("https://staticdelivery.nexusmods.com/images/3333/52051526-1610897084.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card-person-image-Magpayo .picture {
+        width: 110px;
+        top: -40px;
+        left: 200px;
+        position: absolute;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease;
+      }
+
+      .picture:hover {
+        transform: scale(1.2);
+      }
+
+      .category {
+        color: #f3b664;
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+      }
+
+      .card-person > h3 {
+        font-size: 20px;
+        color: #45474b;
+      }
+
+      .card-person > p {
+        font-size: 20px;
+        padding: 10px 15px 15px 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+      .card-person {
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <header>
+        <nav>
+          <h1>The Cyber Idiots</h1>
+        </nav>
+      </header>
+
+      <main>
+        <div class="card">
+          <div class="card-person">
+            <div class="card-person-image-Gamit">
+              <a href="index.html" target="_blank"
+                ><img
+                  class="picture"
+                  src="https://scontent.fcrk1-2.fna.fbcdn.net/v/t1.15752-9/423686746_418099223910162_3651967421473705962_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEVmXnjUXlz2RwflP3VUr6w23VHyuMudjrbdUfK4y52Omt9n5qmwoXO9CgHVezf-H_VnNons4eFE0mf5vPEpnyK&_nc_ohc=ASYRV4wfxHEAX9Kv08p&_nc_ht=scontent.fcrk1-2.fna&oh=03_AdSWdPd0bFFK9EsTto0_dPu6RPNnjIv3u1zj1rQcAxMOMg&oe=660CD2C1"
+                  alt=""
+              /></a>
+            </div>
+
+            <h3>Gamit</h3>
+            <p>"Early to bed, Early to rise."</p>
+            <p>Full name: Mendoza Gamit</p>
+            <p>Age: 21</p>
+            <p>Sex: Male</p>
+            <p>Status: Single</p>
+            <p>Education: Undergraduate</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-person">
+            <div class="card-person-image-Tiamzon">
+              <a href="Tiamzon1_Page.html" target="_blank"
+                ><img
+                  class="picture"
+                  src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.6435-9/44190312_2160241887522466_2869552390162350080_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=C62ZSkxKPQsAX9rmH1p&_nc_ht=scontent.fcrk1-1.fna&oh=00_AfCc2B5EeoMvYsVY_k0tTau5qdW6BvY7jYJQZt8dIbFQMg&oe=661111AD"
+                  alt=""
+              /></a>
+            </div>
+
+            <h3>Tiamzon</h3>
+            <p>
+              "Im Lazy, thats why I will always find the fastest way to solve a
+              task"
+            </p>
+            <p>Full name: Adrian Jennel L. Tiamzon</p>
+            <p>Age: 22</p>
+            <p>Sex: Male</p>
+            <p>Status: Single</p>
+            <p>Education: Undergraduate</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-person">
+            <div class="card-person-image-Magpayo">
+              <a href="v1.html" target="_blank"
+                ><img
+                  class="picture"
+                  src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t1.15752-9/430349243_389014517080636_8693378720853817084_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHQem2UFYCHtgPcaI_UfsVIHJDF3v6KU1ockMXe_opTWgUdB2b9cIm7mqcYCQ7YYj35XS8vT-2cP1JDuchqufSM&_nc_ohc=EFWn1wGAyUAAX9AiH8U&_nc_ht=scontent.fcrk1-4.fna&oh=03_AdShlGL-hiVu2kdC8HXbBivapbzaOhm9YGXxQkSqYzfJHg&oe=660CDE97"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <h3>Magpayo</h3>
+            <p>"Never give up, no matter what."</p>
+            <p>Full name: Kurt Cedric Magpayo</p>
+            <p>Age: 22</p>
+            <p>Sex: Male</p>
+            <p>Status: Single</p>
+            <p>Education: Undergraduate</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="copyright">Copyright &copy; 2024 -Cyber Idiots</div>
+    </footer>
+  </body>
+</html>
